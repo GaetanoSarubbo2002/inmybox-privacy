@@ -1,28 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Privacy Policy - InMyBox</title>
-    <style>body { font-family: sans-serif; line-height: 1.6; padding: 40px; max-width: 800px; margin: auto; }</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InMyBox - Privacy & Support</title>
+    <style>
+        :root { --primary: #10B881; --dark: #374151; --light: #f9fafb; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: auto; padding: 40px 20px; }
+        .hero { text-align: center; padding: 60px 20px; background: white; border-bottom: 1px solid #eee; }
+        .hero img { width: 120px; border-radius: 20px; margin-bottom: 20px; }
+        .hero h1 { color: var(--primary); margin: 0; font-size: 2.5em; }
+        .hero p { font-size: 1.2em; color: #666; }
+        .buttons { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
+        .btn { padding: 15px 25px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-privacy { background: var(--primary); color: white; }
+        .btn-delete { background: #ef4444; color: white; }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
+        section { background: white; padding: 30px; border-radius: 15px; margin-top: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        footer { text-align: center; padding: 40px; color: #999; font-size: 0.9em; }
+    </style>
 </head>
 <body>
-    <h1>Informativa sulla Privacy di InMyBox</h1>
-    <p><strong>Ultimo aggiornamento:</strong> 18/02/2026</p>
-    <p>L'applicazione InMyBox è fornita da <strong>Gaetano Sarubbo</strong> come servizio gratuito con opzioni aggiuntive a pagamento.</p>
-    
-    <h2>1. Raccolta e utilizzo delle informazioni</h2>
-    <p>Per l'accesso e il corretto funzionamento, l'app utilizza il servizio di autenticazione di Google. I dati (come nome ed email) vengono salvati in modo sicuro tramite Firebase per la gestione dell'account e delle funzionalità dell'app.</p>
 
-    <h2>2. Servizi di terze parti</h2>
-    <ul>
-        <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
-        <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543">AdMob</a></li>
-    </ul>
+<div class="hero">
+    <img src="logo.png" alt="InMyBox Logo">
+    <h1>InMyBox</h1>
+    <p>Il tuo inventario intelligente per la casa e la cucina.</p>
+    <div class="buttons">
+        <a href="#privacy" class="btn btn-privacy">Informativa Privacy</a>
+        <a href="#delete" class="btn btn-delete">Eliminazione Account</a>
+    </div>
+</div>
 
-    <h2>3. Eliminazione dei dati</h2>
-    <p>Gli utenti possono richiedere l'eliminazione dei propri dati e dell'account inviando un'email a <strong>inmyboxia@gmail.com</strong>. I dati verranno rimossi dai nostri sistemi entro 30 giorni.</p>
+<div class="container">
+    <section id="privacy">
+        <h2>Informativa sulla Privacy</h2>
+        <p><strong>Ultimo aggiornamento:</strong> 18/02/2026</p>
+        <p>L'applicazione InMyBox è fornita da <strong>Gaetano Sarubbo</strong> come servizio gratuito con opzioni aggiuntive a pagamento. Il presente documento ha lo scopo di informare gli utenti circa le politiche di raccolta, utilizzo e divulgazione dei dati personali.</p>
+        
+        <h3>1. Raccolta e utilizzo delle informazioni</h3>
+        <p>Per un'esperienza ottimale durante l'utilizzo dell'app, l'app utilizza l'autenticazione di Google e Firebase. I dati identificativi (nome ed email) vengono utilizzati esclusivamente per la gestione dell'account e la sincronizzazione della tua dispensa virtuale.</p>
 
-    <h2>4. Contatti</h2>
-    <p>Per domande o suggerimenti, contattami a: <strong>inmyboxia@gmail.com</strong></p>
+        <h3>2. Servizi di terze parti</h3>
+        <p>L'app utilizza servizi che potrebbero raccogliere informazioni per identificarti:</p>
+        <ul>
+            <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
+            <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543">AdMob</a></li>
+        </ul>
+
+        <h3>3. Log Data e Cookie</h3>
+        <p>In caso di errore dell'app, vengono raccolti i "Log Data" che possono includere l'indirizzo IP, il nome del dispositivo e la versione del sistema operativo per aiutarci a risolvere il problema tecnico.</p>
+
+        <h3>4. Sicurezza</h3>
+        <p>Ci sforziamo di proteggere i tuoi dati con mezzi commercialmente accettabili. Ricorda però che nessun metodo di trasmissione via Internet è sicuro al 100%.</p>
+    </section>
+
+    <section id="delete">
+        <h2>Eliminazione Account e Dati</h2>
+        <p>In conformità con le norme di Google Play, offriamo agli utenti il controllo totale sui propri dati. Puoi richiedere la cancellazione permanente del tuo account e di tutti i dati associati (inventari, luoghi, ricette salvate) in qualsiasi momento.</p>
+        <p><strong>Come procedere:</strong> Invia un'email a <a href="mailto:inmyboxia@gmail.com">inmyboxia@gmail.com</a> scrivendo nell'oggetto <strong>ELIMINAZIONE ACCOUNT</strong> e indicando nel corpo del messaggio l'indirizzo email che utilizzi per accedere all'app.</p>
+        <p><em>La cancellazione verrà elaborata entro 30 giorni e comporterà la rimozione definitiva di ogni dato dai nostri database Firebase.</em></p>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 Gaetano Sarubbo - InMyBox
+</footer>
+
 </body>
 </html>
