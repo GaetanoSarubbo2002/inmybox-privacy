@@ -3,71 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InMyBox - Privacy & Support</title>
+    <title>InMyBox - Il tuo inventario intelligente</title>
     <style>
-        :root { --primary: #10B881; --dark: #374151; --light: #f9fafb; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); margin: 0; padding: 0; }
-        .container { max-width: 800px; margin: auto; padding: 40px 20px; }
-        .hero { text-align: center; padding: 60px 20px; background: white; border-bottom: 1px solid #eee; }
-        .hero img { width: 120px; border-radius: 20px; margin-bottom: 20px; }
-        .hero h1 { color: var(--primary); margin: 0; font-size: 2.5em; }
-        .hero p { font-size: 1.2em; color: #666; }
-        .buttons { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
-        .btn { padding: 15px 25px; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        :root { --primary: #10B881; --dark: #1f2937; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background: #f3f4f6; color: var(--dark); }
+        
+        /* Header con Logo */
+        header { background: white; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); sticky: top; }
+        header img { height: 50px; }
+
+        /* Contenitore Slide */
+        .content { max-width: 1000px; margin: 20px auto; padding: 0 15px; }
+        .slide-img { width: 100%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); margin-bottom: 30px; display: block; }
+
+        /* Sezione Legale / Footer */
+        .legal-box { background: white; padding: 50px 30px; border-radius: 20px; text-align: center; margin-top: 50px; }
+        .legal-box h2 { color: var(--primary); font-size: 2em; }
+        
+        .buttons { display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap; }
+        .btn { padding: 18px 30px; border-radius: 12px; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: 0.3s; }
         .btn-privacy { background: var(--primary); color: white; }
-        .btn-delete { background: #ef4444; color: white; }
-        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
-        section { background: white; padding: 30px; border-radius: 15px; margin-top: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h2 { color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
-        footer { text-align: center; padding: 40px; color: #999; font-size: 0.9em; }
+        .btn-delete { background: #374151; color: white; }
+        .btn:hover { transform: scale(1.05); opacity: 0.9; }
+
+        .text-content { text-align: left; max-width: 800px; margin: 40px auto; line-height: 1.8; border-top: 1px solid #eee; padding-top: 40px; }
+        footer { padding: 40px; color: #9ca3af; font-size: 0.9em; text-align: center; }
     </style>
 </head>
 <body>
 
-<div class="hero">
+<header>
     <img src="logo.png" alt="InMyBox Logo">
-    <h1>InMyBox</h1>
-    <p>Il tuo inventario intelligente per la casa e la cucina.</p>
-    <div class="buttons">
-        <a href="#privacy" class="btn btn-privacy">Informativa Privacy</a>
-        <a href="#delete" class="btn btn-delete">Eliminazione Account</a>
+</header>
+
+<div class="content">
+    <img src="slide1.jpg" class="slide-img" alt="InMyBox - Inventario Intelligente">
+    <img src="slide3.jpg" class="slide-img" alt="Organizza i tuoi spazi">
+    <img src="slide4.jpg" class="slide-img" alt="Controllo scadenze">
+    <img src="slide6.jpg" class="slide-img" alt="Smart Chef AI">
+    
+    <div class="legal-box">
+        <h2>Documentazione e Supporto</h2>
+        <p>Gestisci i tuoi dati e consulta le nostre policy ufficiali.</p>
+        
+        <div class="buttons">
+            <a href="#privacy" class="btn btn-privacy">Privacy Policy</a>
+            <a href="#delete" class="btn btn-delete">Eliminazione Account</a>
+        </div>
+
+        <div id="privacy" class="text-content">
+            <h3>Informativa sulla Privacy</h3>
+            <p><strong>Ultimo aggiornamento:</strong> 18/02/2026</p>
+            <p>L'applicazione InMyBox è fornita da Gaetano Sarubbo come servizio gratuito con opzioni aggiuntive a pagamento. Utilizziamo Google Login e Firebase per garantirti la massima sicurezza e sincronizzazione dei dati[cite: 5, 25].</p>
+            </div>
+
+        <div id="delete" class="text-content" style="background: #fff5f5; padding: 20px; border-radius: 10px;">
+            <h3>Richiesta Eliminazione Account</h3>
+            <p>Per eliminare il tuo account e tutti i dati associati (inventari e ricette), invia un'email a <strong>inmyboxia@gmail.com</strong>.</p>
+            <p>Oggetto: <strong>ELIMINAZIONE ACCOUNT</strong></p>
+            <p>Specifica nel corpo del messaggio l'email utilizzata per l'accesso. Procederemo alla rimozione entro 30 giorni.</p>
+        </div>
     </div>
 </div>
 
-<div class="container">
-    <section id="privacy">
-        <h2>Informativa sulla Privacy</h2>
-        <p><strong>Ultimo aggiornamento:</strong> 18/02/2026</p>
-        <p>L'applicazione InMyBox è fornita da <strong>Gaetano Sarubbo</strong> come servizio gratuito con opzioni aggiuntive a pagamento. Il presente documento ha lo scopo di informare gli utenti circa le politiche di raccolta, utilizzo e divulgazione dei dati personali.</p>
-        
-        <h3>1. Raccolta e utilizzo delle informazioni</h3>
-        <p>Per un'esperienza ottimale durante l'utilizzo dell'app, l'app utilizza l'autenticazione di Google e Firebase. I dati identificativi (nome ed email) vengono utilizzati esclusivamente per la gestione dell'account e la sincronizzazione della tua dispensa virtuale.</p>
-
-        <h3>2. Servizi di terze parti</h3>
-        <p>L'app utilizza servizi che potrebbero raccogliere informazioni per identificarti:</p>
-        <ul>
-            <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
-            <li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a></li>
-            <li><a href="https://support.google.com/admob/answer/6128543">AdMob</a></li>
-        </ul>
-
-        <h3>3. Log Data e Cookie</h3>
-        <p>In caso di errore dell'app, vengono raccolti i "Log Data" che possono includere l'indirizzo IP, il nome del dispositivo e la versione del sistema operativo per aiutarci a risolvere il problema tecnico.</p>
-
-        <h3>4. Sicurezza</h3>
-        <p>Ci sforziamo di proteggere i tuoi dati con mezzi commercialmente accettabili. Ricorda però che nessun metodo di trasmissione via Internet è sicuro al 100%.</p>
-    </section>
-
-    <section id="delete">
-        <h2>Eliminazione Account e Dati</h2>
-        <p>In conformità con le norme di Google Play, offriamo agli utenti il controllo totale sui propri dati. Puoi richiedere la cancellazione permanente del tuo account e di tutti i dati associati (inventari, luoghi, ricette salvate) in qualsiasi momento.</p>
-        <p><strong>Come procedere:</strong> Invia un'email a <a href="mailto:inmyboxia@gmail.com">inmyboxia@gmail.com</a> scrivendo nell'oggetto <strong>ELIMINAZIONE ACCOUNT</strong> e indicando nel corpo del messaggio l'indirizzo email che utilizzi per accedere all'app.</p>
-        <p><em>La cancellazione verrà elaborata entro 30 giorni e comporterà la rimozione definitiva di ogni dato dai nostri database Firebase.</em></p>
-    </section>
-</div>
-
 <footer>
-    &copy; 2026 Gaetano Sarubbo - InMyBox
+    &copy; 2026 Gaetano Sarubbo | InMyBox - Organizza la casa, traccia le scadenze e cucina con l'AI[cite: 5].
 </footer>
 
 </body>
